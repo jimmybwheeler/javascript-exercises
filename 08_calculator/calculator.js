@@ -12,16 +12,21 @@ const sum = function(array) {
   return array.reduce((accumulator, initialValue) => accumulator + initialValue, 0);
 };
 
-const multiply = function() {
-
+const multiply = function(array) {
+  return array.reduce((accumulator, initialValue) => accumulator * initialValue);
 };
 
-const power = function() {
-	
+const power = function(num1, num2) {
+  return num1 ** num2;
 };
 
-const factorial = function() {
-	
+const factorial = function(num) {
+	let result = 1;
+
+  for(let i = 2; i <= num; i++){
+    result = result * i;
+  }
+  return result;
 };
 
 // Do not edit below this line
