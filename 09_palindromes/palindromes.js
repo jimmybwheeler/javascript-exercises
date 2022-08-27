@@ -1,9 +1,6 @@
 const palindromes = function (myString) {
-    for(let i = 0; i < myString.length; i++){
-        if(myString.charAt(i) == myString.charAt(-i)){
-            return;
-        }
-    } 
+    let array = Array.from(myString.toLowerCase());
+    console.log(array);
 };
 
 // Do not edit below this line
